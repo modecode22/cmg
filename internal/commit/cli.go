@@ -20,8 +20,8 @@ func RunCLI() error {
 	var typeOptions []string
 	for _, t := range DefaultTypes() {
 		typeOptions = append(typeOptions, 
-			fmt.Sprintf("%s %s: %s %s", 
-				t.Emoji, t.Label, t.Description, t.Emoji))
+			fmt.Sprintf("%s: %s %s", 
+				t.Label, t.Description, t.Emoji))
 	}
 
 	questions := []*survey.Question{
