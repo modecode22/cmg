@@ -80,10 +80,11 @@ func RunCLI() error {
 }
 
 func formatCommitMessage(c *Commit) string {
-	// Extract the type from the selected option
-	c.Type = strings.Split(strings.TrimSpace(strings.Split(c.Type, ":")[0]), " ")[1]
+	// Extract the type including emoji from the selected option
+	// Split by ":" and take first part, which includes emoji and type
+	typeWithEmoji := strings.TrimSpace(strings.Split(c.Type, ":")[0])
 	
-	commitMsg := fmt.Sprintf("%s", c.Type)
+	commitMsg := fmt.Sprintf("%s ", typeWithEmoji)
 	if c.Scope != "" {
 		commitMsg += fmt.Sprintf("(%s)", c.Scope)
 	}
