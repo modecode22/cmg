@@ -5,7 +5,6 @@ import (
 	"os"
 	"os/exec"
 	"strings"
-
 	"github.com/AlecAivazis/survey/v2"
 	"github.com/fatih/color"
 )

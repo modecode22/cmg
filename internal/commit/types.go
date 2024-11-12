@@ -15,7 +15,6 @@ type TypeOption struct {
 	Emoji      string
 }
 
-// DefaultTypes returns the default commit types
 func DefaultTypes() []TypeOption {
 	return []TypeOption{
 		{"✨ feat", "A new feature", "✨"},

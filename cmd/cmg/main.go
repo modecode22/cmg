@@ -2,7 +2,6 @@ package main
 
 import (
 	"os"
-
 	"github.com/fatih/color"
 	"github.com/modecode22/cmg/internal/commit"
 	"github.com/urfave/cli/v2"
