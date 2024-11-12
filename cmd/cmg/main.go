@@ -5,7 +5,7 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/urfave/cli/v2"
-	"github.com/modecode/cmg/internal/commit"
+	"github.com/modecode22/cmg/internal/commit"
 )
 
 func main() {

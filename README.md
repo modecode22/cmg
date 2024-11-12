@@ -13,7 +13,7 @@ A command-line tool to help you create conventional commits with ease.
 ## Installation
 
 ```bash
-go install github.com/modecode/cmg/cmd/cmg@latest
+go install github.com/modecode22/cmg/cmd/cmg@latest
 ```
 
 Make sure your Go installation is up to date and your `$GOPATH/bin` is in your system's `PATH`.
