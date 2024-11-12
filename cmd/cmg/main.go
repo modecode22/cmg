@@ -4,8 +4,8 @@ import (
 	"os"
 
 	"github.com/fatih/color"
-	"github.com/urfave/cli/v2"
 	"github.com/modecode22/cmg/internal/commit"
+	"github.com/urfave/cli/v2"
 )
 
 func main() {

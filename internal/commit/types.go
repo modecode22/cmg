@@ -1,6 +1,5 @@
 package commit
 
-// Commit represents a conventional commit message structure
 type Commit struct {
 	Type     string
 	Scope    string
@@ -10,7 +9,6 @@ type Commit struct {
 	Issues   string
 }
 
-// TypeOption represents a commit type with its description
 type TypeOption struct {
 	Label       string
 	Description string

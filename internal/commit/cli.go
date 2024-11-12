@@ -10,13 +10,10 @@ import (
 	"github.com/fatih/color"
 )
 
-// RunCLI executes the main CLI logic
 func RunCLI() error {
 	color.Cyan("Welcome to the Conventional Commit CLI!")
 
 	c := &Commit{}
-	
-	// Build type options
 	var typeOptions []string
 	for _, t := range DefaultTypes() {
 		typeOptions = append(typeOptions, 
@@ -70,9 +67,7 @@ func RunCLI() error {
 	if err != nil {
 		return fmt.Errorf("error occurred while prompting: %w", err)
 	}
-
 	commitMsg := formatCommitMessage(c)
-	
 	fmt.Println(color.CyanString("\nYour commit message:"))
 	fmt.Println(color.YellowString(commitMsg))
 
@@ -80,7 +75,6 @@ func RunCLI() error {
 }
 
 func formatCommitMessage(c *Commit) string {
-	// Extract the type including emoji from the selected option
 	// Split by ":" and take first part, which includes emoji and type
 	typeWithEmoji := strings.TrimSpace(strings.Split(c.Type, ":")[0])
 	
